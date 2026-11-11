@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de contato de Bruno Agostinho.">
+    <title>Bruno Agostinho | Contato</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="pagina-formulario">
+    <header>
+        <h1>Formulário de Contato</h1>
+        <p>Entre em contato preenchendo os campos abaixo.</p>
+    </header>
+
+    <nav aria-label="Navegação principal">
+    <ul class="menu">
+        <li><a href="index.html">Apresentação</a></li>
+        <li><a href="curriculo.html">Currículo</a></li>
+        <li><a href="formulario.html">Contato</a></li>
+        <li><a href="multimidia.html">Multimídia</a></li>
+        <li><a href="graficos.html">Gráficos</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <section>
+            <h2>Contato</h2>
+            <article>
+                <form id="form-contato" action="#" method="post">
+                    <div class="campo">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" required minlength="3">
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone"
+                               pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
+                               placeholder="(11) 99999-9999" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="nascimento">Data de nascimento:</label>
+                        <input type="date" id="nascimento" name="nascimento" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="assunto">Assunto:</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione</option>
+                            <option value="trabalho">Trabalho</option>
+                            <option value="projeto">Projeto</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <fieldset>
+                        <legend>Forma de retorno preferida:</legend>
+                        <div class="opcoes">
+                            <label><input type="radio" name="retorno" value="email" required> E-mail</label>
+                            <label><input type="radio" name="retorno" value="telefone"> Telefone</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required minlength="10"></textarea>
+                    </div>
+
+                    <label>
+                        <input type="checkbox" name="confirmacao" required>
+                        Confirmo que os dados informados estão corretos.
+                    </label>
+
+                    <button type="submit">Validar formulário</button>
+                    <p id="feedback-formulario" class="feedback" role="status" aria-live="polite"></p>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Bruno Agostinho de Souza — 2026</p>
+    </footer>
+    <script src="js/scripts.js" defer></script>\n</body>
+</html>

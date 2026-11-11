@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recursos multimídia em HTML5.">
+    <title>Bruno Agostinho | Multimídia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="pagina-multimidia">
+    <header>
+        <h1>Recursos Multimídia</h1>
+        <p>Exemplos de vídeo, áudio e conteúdo incorporado.</p>
+    </header>
+
+    <nav aria-label="Navegação principal">
+    <ul class="menu">
+        <li><a href="index.html">Apresentação</a></li>
+        <li><a href="curriculo.html">Currículo</a></li>
+        <li><a href="formulario.html">Contato</a></li>
+        <li><a href="multimidia.html">Multimídia</a></li>
+        <li><a href="graficos.html">Gráficos</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <section>
+            <h2>Vídeo local</h2>
+            <article>
+                <video controls width="640">
+                    <source src="video/exemplo.mp4" type="video/mp4">
+                    <source src="video/exemplo.webm" type="video/webm">
+                    Seu navegador não suporta a reprodução de vídeo.
+                </video>
+            </article>
+        </section>
+
+        <section>
+            <h2>Áudio local</h2>
+            <article>
+                <audio controls>
+                    <source src="audio/exemplo.mp3" type="audio/mpeg">
+                    <source src="audio/exemplo.ogg" type="audio/ogg">
+                    Seu navegador não suporta a reprodução de áudio.
+                </audio>
+            </article>
+        </section>
+
+        <section>
+            <h2>Vídeo incorporado</h2>
+            <article>
+                <div class="video-responsivo">
+                    <iframe
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        title="Vídeo incorporado do YouTube"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Bruno Agostinho de Souza — 2026</p>
+    </footer>
+    <script src="js/scripts.js" defer></script>\n</body>
+</html>

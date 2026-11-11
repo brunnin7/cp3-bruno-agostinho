@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site pessoal de Bruno Agostinho de Souza.">
+    <title>Bruno Agostinho | Apresentação</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="pagina-inicio">
+    <header>
+        <h1>Bruno Agostinho de Souza</h1>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+    </header>
+
+    <nav aria-label="Navegação principal">
+    <ul class="menu">
+        <li><a href="index.html">Apresentação</a></li>
+        <li><a href="curriculo.html">Currículo</a></li>
+        <li><a href="formulario.html">Contato</a></li>
+        <li><a href="multimidia.html">Multimídia</a></li>
+        <li><a href="graficos.html">Gráficos</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <section>
+            <h2>Apresentação</h2>
+            <article>
+                <h3>Sobre mim</h3>
+                <p>
+                    Meu nome é Bruno Agostinho de Souza. Sou interessado em tecnologia,
+                    informática e desenvolvimento de sistemas. Atualmente, estou cursando
+                    <strong>Análise e Desenvolvimento de Sistemas</strong> e busco aprimorar
+                    meus conhecimentos na área de Tecnologia da Informação.
+                </p>
+            </article>
+        </section>
+
+        <section class="secao-objetivos">
+            <h2>Meus objetivos de estudo</h2>
+            <article>
+                <p>Adicione objetivos para acompanhar seus estudos. Eles ficam salvos neste navegador.</p>
+                <form id="form-objetivo" class="form-objetivo">
+                    <div class="campo">
+                        <label for="novo-objetivo">Novo objetivo:</label>
+                        <input type="text" id="novo-objetivo" name="objetivo"
+                               placeholder="Ex.: Praticar JavaScript" maxlength="80" required>
+                    </div>
+                    <button type="submit">Adicionar objetivo</button>
+                </form>
+                <p id="feedback-objetivo" class="feedback" role="status" aria-live="polite"></p>
+                <ul id="lista-objetivos" class="lista-objetivos">
+                    <li class="mensagem-vazia">Nenhum objetivo cadastrado ainda.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Meus interesses</h2>
+            <article>
+                <ul>
+                    <li>Tecnologia da Informação</li>
+                    <li>Futebol</li>
+                    <li>Jogos eletrônicos</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Bruno Agostinho de Souza — 2026</p>
+        <p>Projeto acadêmico de Desenvolvimento Front-end.</p>
+    </footer>
+    <script src="js/scripts.js" defer></script>\n</body>
+</html>

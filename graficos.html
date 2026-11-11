@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exemplos de Canvas e SVG em HTML5.">
+    <title>Bruno Agostinho | Gráficos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="pagina-graficos">
+    <header>
+        <h1>Recursos Gráficos: Canvas e SVG</h1>
+        <p>Desenhos e formas gráficas criados no HTML5.</p>
+    </header>
+
+    <nav aria-label="Navegação principal">
+    <ul class="menu">
+        <li><a href="index.html">Apresentação</a></li>
+        <li><a href="curriculo.html">Currículo</a></li>
+        <li><a href="formulario.html">Contato</a></li>
+        <li><a href="multimidia.html">Multimídia</a></li>
+        <li><a href="graficos.html">Gráficos</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <section>
+            <h2>Canvas funcional</h2>
+            <article>
+                <p>O Canvas é desenhado por JavaScript e contém um retângulo e um círculo.</p>
+                <canvas id="desenho" width="500" height="240">
+                    Seu navegador não suporta o elemento Canvas.
+                </canvas>
+            </article>
+        </section>
+
+        <section>
+            <h2>SVG estilizado</h2>
+            <article>
+                <p>O SVG contém um retângulo, um círculo e um polígono estilizados pelo CSS externo.</p>
+                <svg class="svg-responsivo" viewBox="0 0 500 260"
+                     role="img" aria-label="Formas geométricas em SVG">
+                    <title>Formas geométricas criadas com SVG</title>
+                    <rect class="forma-retangulo" x="30" y="45" width="150" height="90" rx="12"></rect>
+                    <circle class="forma-circulo" cx="290" cy="90" r="55"></circle>
+                    <polygon class="forma-poligono" points="390,145 455,235 325,235"></polygon>
+                </svg>
+            </article>
+        </section>
+
+        <section>
+            <h2>Canvas x SVG</h2>
+            <article>
+                <p>
+                    O <strong>Canvas</strong> trabalha com pixels e é útil para desenhos dinâmicos.
+                    O <strong>SVG</strong> usa formas vetoriais e mantém a qualidade ao ser redimensionado.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Bruno Agostinho de Souza — 2026</p>
+    </footer>
+
+
+    <script src="js/scripts.js" defer></script>\n</body>
+</html>
